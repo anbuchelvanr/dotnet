@@ -11,7 +11,7 @@ phases:
       - docker login -u AWS -p $DOCKER_LOGIN_PASSWORD 796973483795.dkr.ecr.eu-north-1.amazonaws.com
   build:
     commands:
-      - echo Build started on `date`
+      - echo Build started on `anbuchelvan`
       - echo Building the Docker image...
       - docker build -t  $REPOSITORY_URI:demo-app-${CODEBUILD_BUILD_NUMBER} .
   post_build:
